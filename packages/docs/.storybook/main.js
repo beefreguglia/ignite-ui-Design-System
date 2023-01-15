@@ -18,7 +18,9 @@ module.exports = {
   },
   viteFinal: (config, { configType }) => {
     if (configType === 'PRODUCTION') {
-      config.base = '/ignitecall-new-ignite-challenge-05'
+      config.base = '/ignitecall-new-ignite-challenge-05/'
     }
+
+    return config
   }
 }
