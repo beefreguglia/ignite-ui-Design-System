@@ -1,5 +1,5 @@
 import { Meta, StoryObj } from '@storybook/react'
-import { Card, Text, TextArea, TextAreaProps } from '@ignite-ui/react'
+import { Card, Text, TextArea, TextAreaProps } from '@bfreguglia-ignite-ui/react'
 
 export default {
   title: 'Form/Text Area',

@@ -1,5 +1,5 @@
 import { Meta, StoryObj } from '@storybook/react'
-import { Card, Text, TextInput, TextInputProps } from '@ignite-ui/react'
+import { Card, Text, TextInput, TextInputProps } from '@bfreguglia-ignite-ui/react'
 
 export default {
   title: 'Form/Text Input',

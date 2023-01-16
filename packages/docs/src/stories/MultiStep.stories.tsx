@@ -1,5 +1,5 @@
 import { Meta, StoryObj } from '@storybook/react'
-import { Card, MultiStep, MultiStepProps } from '@ignite-ui/react'
+import { Card, MultiStep, MultiStepProps } from '@bfreguglia-ignite-ui/react'
 
 export default {
   title: 'Form/Multi Step',
