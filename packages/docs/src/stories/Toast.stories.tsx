@@ -17,18 +17,20 @@ export default {
   decorators: [
     (Story) => {
       return (
-        <Card
-          as="label"
-          css={{
-            display: 'flex',
-            flexDirection: 'column',
-            gap: '$2',
-            position: 'relative',
-            minHeight: 100,
-          }}
-        >
-          <ToastProvider>{Story()}</ToastProvider>
-        </Card>
+        <ToastProvider>
+          <Card
+            as="label"
+            css={{
+              display: 'flex',
+              flexDirection: 'column',
+              gap: '$2',
+              minHeight: 300,
+              overflow: 'hidden',
+            }}
+          >
+            {Story()}
+          </Card>
+        </ToastProvider>
       )
     },
   ],

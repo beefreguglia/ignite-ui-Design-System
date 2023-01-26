@@ -12,7 +12,14 @@ export interface ToastProps extends ComponentProps<typeof ToastContainer> {
 
 export function Toast({ title, description, ...props }: ToastProps) {
   return (
-    <ToastContainer {...props}>
+    <ToastContainer
+      type="background"
+      css={{
+        '--radix-toast-swipe-move-x': 32,
+        '--radix-toast-swipe-end-x': 32,
+      }}
+      {...props}
+    >
       <div>
         <ToastRadix.Title asChild>
           <Heading size="sm" color="$white">
@@ -37,9 +44,13 @@ export interface ToastProviderProps
 
 export function ToastProvider({ children, ...props }: ToastProviderProps) {
   return (
-    <ToastRadix.Provider duration={400} {...props}>
-      {children}
-      <ToastRadix.Viewport />
+    <ToastRadix.Provider
+      duration={3000}
+      swipeDirection="right"
+      swipeThreshold={32}
+      {...props}
+    >
+      <ToastRadix.Viewport asChild>{children}</ToastRadix.Viewport>
     </ToastRadix.Provider>
   )
 }
