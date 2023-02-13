@@ -1,0 +1,2 @@
+import{A as t}from"./index.3506d963.js";import"./index.6dbcc0c5.js";import"./iframe.44a6592b.js";import"./index.55df7c7d.js";import"./jsx-runtime.79b8c90e.js";const e={title:"Data display/Avatar",component:t,argTypes:{src:{control:{type:"text"}}},args:{src:"https://github.com/beefreguglia.png",alt:"Bernardo Freguglia"}},p={},c={args:{src:void 0,alt:""}},l=["Primary","WithFallback"];export{p as Primary,c as WithFallback,l as __namedExportsOrder,e as default};
+//# sourceMappingURL=Avatar.stories.15d98eb6.js.map
